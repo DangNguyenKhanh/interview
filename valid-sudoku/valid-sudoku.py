@@ -1,26 +1,36 @@
-class Solution(object):
-    def isValidSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: bool
-        """
-        for row in board:
-            digits = [c for c in row if c != '.']
-            if len(digits) != len(set(digits)):
-                return False
+class Solution:
+    def isValidSudoku(self, board: list[list[str]]) -> bool:
+        # 1. Validate all Rows
+        for r in range(9):
+            seen = set()
+            for c in range(9):
+                val = board[r][c]
+                if val != '.':
+                    if val in seen:
+                        return False
+                    seen.add(val)
 
-        for col in zip(*board):
-            digits = [c for c in col if c != '.']
-            if len(digits) != len(set(digits)):
-                return False
+        # 2. Validate all Columns
+        for c in range(9):
+            seen = set()
+            for r in range(9):
+                val = board[r][c]
+                if val != '.':
+                    if val in seen:
+                        return False
+                    seen.add(val)
 
-        for i in (0, 3, 6):
-            for j in (0, 3, 6):
-                box = board[i][j:j+3] + board[i+1][j:j+3] + board[i+2][j:j+3]
-                digits = [c for c in box if c != '.']
-                if len(digits) != len(set(digits)):
-                    return False
+        # 3. Validate all nine 3x3 Sub-boxes
+        # (br, bc) represent the top-left corner of each sub-box
+        for br in (0, 3, 6):
+            for bc in (0, 3, 6):
+                seen = set()
+                for r in range(br, br + 3):
+                    for c in range(bc, bc + 3):
+                        val = board[r][c]
+                        if val != '.':
+                            if val in seen:
+                                return False
+                            seen.add(val)
 
         return True
-
-
