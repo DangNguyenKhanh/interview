@@ -2,8 +2,7 @@
 fruits = {"apple", "orange", "banana"}
 
 # Create a set from a List, Tuple, Set
-numbers = set([1, 2, 2, 3, 4, 4, 4]) 
-# -> {1, 2, 3, 4}
+numbers = set([1, 2, 2, 3, 4, 4, 4])  # {1, 2, 3, 4}
 
 # Create an empty set, not empty_set = {}
 empty_set = set()
