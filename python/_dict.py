@@ -48,3 +48,17 @@ squares = {x: x**2 for x in range(1, 5)}  # {1: 1, 2: 4, 3: 9, 4: 16}
 
 all_scores = {"Alice": 85, "Bob": 42, "Charlie": 68}
 passed = {name: score for name, score in all_scores.items() if score >= 50}
+
+# 'in' operator
+student = {
+    "name": "Alice",
+    "age": 20,
+    "grade": "A"
+}
+
+# Keys
+print("name" in student)                    # True    O(1)
+print("name" in student.keys())             # True    O(1)
+print("Alice" in student.values())          # True    O(n)
+print(("name", "Bob") in student.items())   # False   O(n)
+
