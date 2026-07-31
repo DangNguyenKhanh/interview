@@ -6,8 +6,10 @@ Employees - HR management: Employees, departments, salary history
 
 Classicmodels - Model car sales: Customers, orders, product details, revenue
 
-# Example
+# MySQL
+-- Select the company database
 USE company;
 
+-- List all tables
 SHOW TABLES;
 
