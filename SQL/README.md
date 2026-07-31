@@ -8,5 +8,6 @@ Classicmodels - Model car sales: Customers, orders, product details, revenue
 
 # Example
 USE company;
+
 SHOW TABLES;
 
