@@ -6,10 +6,8 @@
 
 Retrieve each employee's first name, middle initial, last name, and salary.
 
-```sql
-SELECT Fname, Minit, Lname, Salary
-FROM EMPLOYEE;
-```
+<img width="282" height="196" alt="image" src="https://github.com/user-attachments/assets/e8a25bbc-589f-467a-93fc-c13f959e1aec" />
+
 
 ---
 
