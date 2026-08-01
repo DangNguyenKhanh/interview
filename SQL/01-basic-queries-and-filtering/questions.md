@@ -72,12 +72,8 @@ Show the first name, last name, and salary of female employees earning at least 
 
 Find employees whose last name starts with 'S' or whose first name starts with 'J'.
 
-```sql
-SELECT Fname, Lname
-FROM EMPLOYEE
-WHERE Lname LIKE 'S%'
-   OR Fname LIKE 'J%';
-```
+<img width="172" height="113" alt="image" src="https://github.com/user-attachments/assets/0fc8c6c4-8b75-4cef-a0d9-fd402e436bfb" />
+
 
 ---
 
@@ -87,12 +83,8 @@ WHERE Lname LIKE 'S%'
 
 Show the three highest-paid employees.
 
-```sql
-SELECT Fname, Lname, Salary
-FROM EMPLOYEE
-ORDER BY Salary DESC
-LIMIT 3;
-```
+<img width="229" height="93" alt="image" src="https://github.com/user-attachments/assets/fc256c72-d248-4b11-89bc-63e7d726b360" />
+
 
 ---
 
@@ -102,12 +94,8 @@ LIMIT 3;
 
 List dependents born before January 1, 1980, ordered by birth date from oldest to newest.
 
-```sql
-SELECT *
-FROM DEPENDENT
-WHERE Bdate < '1980-01-01'
-ORDER BY Bdate ASC;
-```
+<img width="483" height="89" alt="image" src="https://github.com/user-attachments/assets/d04ec51f-0724-4873-9712-4a9617d0da6e" />
+
 
 ---
 
@@ -117,12 +105,8 @@ ORDER BY Bdate ASC;
 
 Show work assignments where employees worked more than 15 hours, sorted by employee SSN and then by hours worked in descending order.
 
-```sql
-SELECT *
-FROM WORKS_ON
-WHERE Hours > 15
-ORDER BY Essn ASC, Hours DESC;
-```
+<img width="228" height="197" alt="image" src="https://github.com/user-attachments/assets/9b03abdd-1ddd-4b2f-8b17-cdd43b5a6a3a" />
+
 
 ---
 
@@ -132,12 +116,8 @@ ORDER BY Essn ASC, Hours DESC;
 
 Find male employees who do not have a supervisor.
 
-```sql
-SELECT *
-FROM EMPLOYEE
-WHERE Sex = 'M'
-  AND Super_ssn IS NULL;
-```
+<img width="789" height="49" alt="image" src="https://github.com/user-attachments/assets/b1c8cbc3-7c2c-41dc-8008-fb7f8ff37e23" />
+
 
 ---
 
@@ -147,13 +127,8 @@ WHERE Sex = 'M'
 
 Show the two lowest-paid employees in departments 4 and 5.
 
-```sql
-SELECT Fname, Lname, Salary, Dno
-FROM EMPLOYEE
-WHERE Dno IN (4, 5)
-ORDER BY Salary ASC
-LIMIT 2;
-```
+<img width="265" height="69" alt="image" src="https://github.com/user-attachments/assets/64c40c08-ad06-4137-ab3d-0e6fa37d725d" />
+
 
 ---
 
@@ -163,10 +138,8 @@ LIMIT 2;
 
 List all unique relationship types recorded for dependents.
 
-```sql
-SELECT DISTINCT Relationship
-FROM DEPENDENT;
-```
+<img width="128" height="92" alt="image" src="https://github.com/user-attachments/assets/53c62929-7084-4f05-bc1e-ca821fbe62f1" />
+
 
 ---
 
@@ -176,9 +149,5 @@ FROM DEPENDENT;
 
 Show all projects located in Houston or Stafford, sorted alphabetically by project name.
 
-```sql
-SELECT *
-FROM PROJECT
-WHERE Plocation IN ('Houston', 'Stafford')
-ORDER BY Pname ASC;
-```
+<img width="357" height="112" alt="image" src="https://github.com/user-attachments/assets/05cac773-237f-4df1-9a9f-a551d5391240" />
+
