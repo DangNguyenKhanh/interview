@@ -39,11 +39,8 @@ Show all employees who work in department 5.
 
 Find employees who earn more than 30,000.
 
-```sql
-SELECT *
-FROM EMPLOYEE
-WHERE Salary > 30000;
-```
+<img width="824" height="112" alt="image" src="https://github.com/user-attachments/assets/30ac96fb-e8bf-4aa5-9779-5ce146548366" />
+
 
 ---
 
@@ -53,10 +50,8 @@ WHERE Salary > 30000;
 
 List all unique locations where the company has projects.
 
-```sql
-SELECT DISTINCT Plocation
-FROM PROJECT;
-```
+<img width="112" height="111" alt="image" src="https://github.com/user-attachments/assets/3c367abb-817c-4faf-af08-98864f0afdad" />
+
 
 ---
 
@@ -66,13 +61,8 @@ FROM PROJECT;
 
 Show the first name, last name, and salary of female employees earning at least 25,000, sorted by salary from highest to lowest.
 
-```sql
-SELECT Fname, Lname, Salary
-FROM EMPLOYEE
-WHERE Sex = 'F'
-  AND Salary >= 25000
-ORDER BY Salary DESC;
-```
+<img width="229" height="90" alt="image" src="https://github.com/user-attachments/assets/9d9256a5-9540-446d-bb1f-2d5f6ebff4f2" />
+
 
 ---
 
