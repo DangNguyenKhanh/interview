@@ -1,0 +1,55 @@
+Exercise 1
+
+Retrieve each employee's first name, middle initial, last name, and salary.
+
+Exercise 2
+
+List all unique salary amounts paid to employees.
+
+Exercise 3
+
+Show all employees who work in department 5.
+
+Exercise 4
+
+Find employees who earn more than 30,000.
+
+Exercise 5
+
+List all unique locations where the company has projects.
+
+Exercise 6
+
+Show the first name, last name, and salary of female employees earning at least 25,000, sorted by salary from highest to lowest.
+
+Exercise 7
+
+Find employees whose last name starts with 'S' or whose first name starts with 'J'.
+
+Exercise 8
+
+Show the three highest-paid employees.
+
+Exercise 9
+
+List dependents born before January 1, 1980, ordered by birth date from oldest to newest.
+
+Exercise 10
+
+Show work assignments where employees worked more than 15 hours, sorted by employee SSN and then by hours worked in descending order.
+
+Exercise 11
+
+Find male employees who do not have a supervisor.
+
+Exercise 12
+
+Show the two lowest-paid employees in departments 4 and 5.
+
+Exercise 13
+
+List all unique relationship types recorded for dependents.
+
+Exercise 14
+
+Show all projects located in Houston or Stafford, sorted alphabetically by project name.
