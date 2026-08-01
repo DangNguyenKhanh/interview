@@ -17,10 +17,8 @@ Retrieve each employee's first name, middle initial, last name, and salary.
 
 List all unique salary amounts paid to employees.
 
-```sql
-SELECT DISTINCT Salary
-FROM EMPLOYEE;
-```
+<img width="91" height="156" alt="image" src="https://github.com/user-attachments/assets/3d7b6cce-243d-4d02-81d0-176a531dfee8" />
+
 
 ---
 
