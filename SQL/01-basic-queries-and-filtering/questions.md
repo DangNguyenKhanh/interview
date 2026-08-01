@@ -28,11 +28,8 @@ List all unique salary amounts paid to employees.
 
 Show all employees who work in department 5.
 
-```sql
-SELECT *
-FROM EMPLOYEE
-WHERE Dno = 5;
-```
+<img width="829" height="112" alt="image" src="https://github.com/user-attachments/assets/aa3d535d-6144-4c51-ac8a-cf1cfddd539b" />
+
 
 ---
 
