@@ -9,5 +9,8 @@ USE company;
 
 -- List all tables
 SHOW TABLES;
+
+-- Drop database
+DROP DATABASE company;
 ```
 
